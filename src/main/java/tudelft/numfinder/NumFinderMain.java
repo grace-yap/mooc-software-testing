@@ -11,7 +11,7 @@ public class NumFinderMain {
         // this crashes >>> not anymore after changing "else if" to "if"
         //nf.find(new int[] {4, 3, 2, 1});
 
-        //null and decimal return    error
+        //null and decimal return error
         //literal returns ASCII value
         nf.find(new  int[] {5, 'A', 10, -7});
 

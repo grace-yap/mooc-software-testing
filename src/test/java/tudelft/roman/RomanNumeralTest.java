@@ -33,4 +33,13 @@ public class RomanNumeralTest {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+
+    //figure out how to make RomanNumeral() return error if invalidNumber
+    @Test
+    public void invalidNumber() {
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("XCXL");
+        System.out.println(result);
+        Assertions.fail("Fail?");
+    }
 }
