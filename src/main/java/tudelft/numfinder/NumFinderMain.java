@@ -8,10 +8,14 @@ public class NumFinderMain {
         // this works
         // nf.find(new int[] {4, 25, 7, 9});
 
-        // this crashes
-        nf.find(new int[] {4, 3, 2, 1});
+        // this crashes >>> not anymore after changing "else if" to "if"
+        //nf.find(new int[] {4, 3, 2, 1});
 
-        System.out.println(nf.getLargest());
-        System.out.println(nf.getSmallest());
+        //null and decimal return    error
+        //literal returns ASCII value
+        nf.find(new  int[] {5, 'A', 10, -7});
+
+        System.out.println("Largest: " + nf.getLargest());
+        System.out.println("Smallest: " + nf.getSmallest());
     }
 }
