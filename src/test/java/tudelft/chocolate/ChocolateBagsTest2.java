@@ -18,6 +18,10 @@ public class ChocolateBagsTest2 {
             "4,2,3,3", "3,2,3,3", "2,2,3,-1", "1,2,3,-1"
     })
     public void testAlgorithm(int small, int big, int total, int expectedResult) {
+        // No need for:
+        // ChocolateBags bags = new ChocolateBags();
+        // int result = bags.calculate(small, big, total);
+        // You can combine them as follows:
         int result = new ChocolateBags().calculate(small, big, total);
         Assertions.assertEquals(expectedResult, result);
     }

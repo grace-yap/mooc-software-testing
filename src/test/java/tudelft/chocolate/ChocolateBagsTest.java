@@ -20,7 +20,8 @@ public class ChocolateBagsTest {
         Assertions.assertEquals(expectedResult, result);
     }
 
-    @ParameterizedTest(name = "small={0}, big={1}, total={2}, result={3}")
+    //@ParameterizedTest(name = "total={2}, small={0}, result={3}, big={1}") //out of order display
+    @ParameterizedTest(name = "small={0}, big={1}, total={2}, result={3}") //correct
     @CsvSource({
         "0,3,17,-1", "1,3,17,-1", "2,3,17,2", "3,3,17,2",
         "0,3,12,-1", "1,3,12,-1", "2,3,12,2", "3,3,12,2"})
