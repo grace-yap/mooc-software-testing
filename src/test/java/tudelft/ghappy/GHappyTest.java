@@ -26,7 +26,7 @@ public class GHappyTest {
      @ParameterizedTest(name = "{0}: {1}, {2}")        //Description: input, expectedResult
      @CsvSource({
              // Null string
-             "Null string,null,false",
+             "Null string,,false",
              // Empty string
              "Empty string,'',false",
              // No g

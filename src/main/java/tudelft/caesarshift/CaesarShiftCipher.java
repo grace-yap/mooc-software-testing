@@ -12,7 +12,8 @@ public class CaesarShiftCipher {
         for(int i = 0; i < length; i++){
             currentChar = message.charAt(i);
            
-            sb.append(currentChar);
+            sb.append(currentChar);       //remove append of currentChar
+            //FIX CODE AFTER STUDYING PYTHON!!!
             if (currentChar > 'z' || currentChar < 'a') {
                 return "invalid";
             } else if ((char) (currentChar + shift) > 'z') {
@@ -20,6 +21,7 @@ public class CaesarShiftCipher {
             } else if ((char) (currentChar + shift) < 'a'){
                 currentChar = (char) (currentChar + 26);
             }
+
             sb.append((char) (currentChar + shift));
         }
 
