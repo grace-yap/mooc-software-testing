@@ -9,13 +9,14 @@ public class srWordCount {
 
         for (int i = 0; i < length; i++){
             //checks if character is a symbol and the previous letter is an r or s
-            if (!Character.isLetter(str.charAt(i)) && (last == 'r' || last == 's')) {
+            if (!Character.isLetter(str.charAt(i)) &&
+                    (last == 'r' || last == 's')) {
                 words++;
                 last = str.charAt(i);
                 System.out.println("FIRST IF - i: "+i+" last: "+last+" words: "+words);
             }
-            else
-                last = str.charAt(i);
+
+            last = str.charAt(i);
 
             System.out.println("OUTSIDE FIRST IF - i: "+i+" last: "+last+" words: "+words);
 
