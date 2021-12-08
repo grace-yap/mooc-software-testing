@@ -33,6 +33,8 @@ public class GHappyTest {
              "No g,asdfasdf,false",
              // Capital G
              "Captial G,asdfGasdf,false", "Captial G,asdfGGasdf,false",
+             // Single g
+             "Single character g,g,false", "Single g,xxxxg,false", "Single g,gxxxx,false", "Single g,xxgxx,false",
              // Multiple g's
              "Multiple g's left,ggxxxx,true", "Multiple g's middle,xgggxxxx,true", "Multiple g's right,xxgggg,true",
              // Combinations

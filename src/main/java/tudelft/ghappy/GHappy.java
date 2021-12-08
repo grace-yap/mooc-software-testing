@@ -9,6 +9,10 @@ public class GHappy {
         if(str.indexOf('g') < 0)
             return false;
 
+        //checks for 1 character string
+        if(str.length() == 1)
+            return false;
+
         for(int i = 0; i < str.length(); i++) {
             if(str.charAt(i) == 'g') {
                 //added separate checking for i = 0
