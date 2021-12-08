@@ -19,7 +19,7 @@ public class CountLetters {
             last = str.charAt(i);
         }
 
-        if(last == 'r' || last == 's')
+        if(last == 'r' || last == 's')      //change last == 'x' to last == 'r'
             words++;
 
         return words;
