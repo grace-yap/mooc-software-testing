@@ -47,7 +47,7 @@ public class CaesarShiftCipherTest {
             "Null shift,asdf,null,invalid",
     })
     public void testCaesarShift(String partition, String input, int num, String expectedOutput){
-         String output = new CaesarShiftCipher().CaesarShiftCipher(input, num);
+        String output = new CaesarShiftCipher().CaesarShiftCipher(input, num);
         Assertions.assertEquals(expectedOutput, output);
     }
 

@@ -5,6 +5,11 @@ public class Mirror {
     public String mirrorEnds(String string) {
         String mirror = "";
 
+        //handle null value
+        if (string == null) {
+            return ("null");
+        }
+
         int begin = 0;
         int end = string.length() - 1;
         for (; begin < end; begin++, end--) {
@@ -16,6 +21,14 @@ public class Mirror {
             }
         }
 
-        return begin == end ? string : mirror;
+        //return begin == end ? string : mirror;
+        if (begin == end) {
+            System.out.println("begin: "+begin+", end: "+end+", string: "+string+", mirror: "+mirror);
+            return string;
+        }
+        else {
+            System.out.println("begin: "+begin+", end: "+end+", string:"+string+", mirror: "+mirror);
+            return mirror;
+        }
     }
 }

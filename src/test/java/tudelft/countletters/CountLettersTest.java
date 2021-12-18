@@ -32,7 +32,7 @@ public class CountLettersTest {
     @Test
     public void nonLetters() {
         int words = new CountLetters().count("12345^&*)()_");
-        Assertions.assertEquals(1, words);
+        Assertions.assertEquals(0, words);
     }
 
     @Test
