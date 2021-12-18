@@ -21,14 +21,14 @@ public class Mirror {
             }
         }
 
-        //return begin == end ? string : mirror;
-        if (begin == end) {
+        return begin == end ? string : mirror;
+        /*if (begin == end) {
             System.out.println("begin: "+begin+", end: "+end+", string: "+string+", mirror: "+mirror);
             return string;
         }
         else {
             System.out.println("begin: "+begin+", end: "+end+", string:"+string+", mirror: "+mirror);
             return mirror;
-        }
+        }*/
     }
 }
